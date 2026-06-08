@@ -3,7 +3,14 @@ return {
     "Bekaboo/dropbar.nvim",
     opts = {
       bar = {
-        padding = { left = 3, right = 3 },
+        padding = { left = 2, right = 2 },
+      },
+      icons = {
+        ui = {
+          bar = {
+            separator = "  ",
+          },
+        },
       },
       menu = {
         win_configs = {

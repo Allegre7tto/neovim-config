@@ -2,6 +2,23 @@ return {
   {
     "folke/noice.nvim",
     opts = {
+      cmdline = {
+        format = {
+          cmdline = { icon = "" },
+          search_down = {
+            view = "cmdline_popup",
+            opts = {
+              position = { row = "90%", col = "50%" },
+            },
+          },
+          search_up = {
+            view = "cmdline_popup",
+            opts = {
+              position = { row = "90%", col = "50%" },
+            },
+          },
+        },
+      },
       views = {
         cmdline_popup = {
           border = {
@@ -23,6 +40,7 @@ return {
         vim.api.nvim_set_hl(0, "NoiceCmdlinePopupBorderFilter", { link = "FloatBorder" })
         local icon_fg = vim.api.nvim_get_hl(0, { name = "DiagnosticSignInfo" }).fg
         vim.api.nvim_set_hl(0, "NoiceCmdlineIcon", { fg = icon_fg, bg = "none" })
+        vim.api.nvim_set_hl(0, "NoiceCmdlineIconSearch", { fg = icon_fg, bg = "none" })
         vim.api.nvim_set_hl(0, "NoiceCmdlinePopupTitle", { link = "FloatTitle" })
 
         vim.api.nvim_set_hl(0, "NoicePopupmenu", { link = "Normal" })

@@ -2,6 +2,11 @@ return {
   {
     "folke/snacks.nvim",
     opts = function(_, opts)
+      opts.indent = opts.indent or {}
+      opts.indent.enabled = false
+      opts.scope = opts.scope or {}
+      opts.scope.enabled = false
+
       opts.dashboard = opts.dashboard or {}
       opts.dashboard.preset = opts.dashboard.preset or {}
       opts.dashboard.preset.header = [[
