@@ -67,7 +67,7 @@ return {
           lualine_y = { "progress" },
           lualine_z = { "location" },
         },
-        extensions = { "neo-tree", "lazy", "fzf" },
+        extensions = { "lazy", "fzf" },
       }
     end,
   },
