@@ -1,9 +1,7 @@
 local opts = { noremap = true, silent = true }
 local map = vim.api.nvim_set_keymap
 
--- space+e 打开nvim-tree
 vim.g.mapleader = " "
-map('n', '<leader>e', ':NvimTreeToggle<CR>', opts)
 
 -- space+d 显示报错
 map('n', '<leader>d', '<cmd>lua vim.diagnostic.open_float(nil, { focusable = false })<CR>',
