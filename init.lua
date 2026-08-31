@@ -46,7 +46,6 @@ vim.pack.add({
 	{ src = "https://github.com/rafamadriz/friendly-snippets" },
 	{ src = "https://github.com/stevearc/conform.nvim" },
 	{ src = "https://github.com/windwp/nvim-autopairs" },
-	{ src = "https://github.com/akinsho/toggleterm.nvim" },
 	{ src = "https://github.com/nvim-lualine/lualine.nvim" },
 	{ src = "https://github.com/folke/noice.nvim" },
 	{ src = "https://github.com/MunifTanjim/nui.nvim" },
@@ -63,7 +62,6 @@ require("plugins.theme")
 require("plugins.blink")
 require("plugins.conform")
 require("plugins.lualine")
-require("plugins.toggleterm")
 require("plugins.dashboard")
 require("plugins.markdown")
 require("plugins.noice")

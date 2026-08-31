@@ -7,5 +7,4 @@ require("which-key").add({
 	{ "<leader>f", require("telescope.builtin").find_files, desc = "Find files", icon = "" },
 	{ "<leader>F", require("telescope.builtin").live_grep, desc = "Live grep", icon = "" },
 	{ "<leader>r", require("telescope.builtin").oldfiles, desc = "Recent files", icon = "" },
-	{ "<leader>t", vim.cmd.ToggleTerm, desc = "Toggle terminal", icon = "" },
 })

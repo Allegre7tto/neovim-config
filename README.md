@@ -13,7 +13,6 @@ A minimal Neovim configuration powered by the official built-in plugin manager [
 - **which-key** leader key menu (helix preset)
 - **noice.nvim** — cmdline/search popups, notifications
 - **conform.nvim** format on save
-- **toggleterm.nvim** floating terminal
 - **snacks.nvim** dashboard with custom art
 - **nvim-autopairs**, **lualine.nvim**, **render-markdown.nvim**
 
@@ -25,7 +24,6 @@ A minimal Neovim configuration powered by the official built-in plugin manager [
 | `<Space>f` | Find files |
 | `<Space>F` | Live grep |
 | `<Space>r` | Recent files |
-| `<Space>t` | Toggle terminal |
 | `<A-Up>` / `<A-Down>` | Move line up/down |
 | `<C-c>` / `<C-x>` (visual) | Copy / cut to system clipboard |
 | `<C-/>` | Toggle comment |
