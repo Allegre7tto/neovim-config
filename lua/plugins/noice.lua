@@ -10,8 +10,31 @@ require("noice").setup({
 			["cmp.entry.get_documentation"] = true,
 		},
 	},
+	cmdline = {
+		format = {
+			cmdline = { icon = "" },
+			search_down = {
+				view = "cmdline_popup",
+				opts = {
+					position = { row = "90%", col = "50%" },
+				},
+			},
+			search_up = {
+				view = "cmdline_popup",
+				opts = {
+					position = { row = "90%", col = "50%" },
+				},
+			},
+		},
+	},
+	views = {
+		cmdline_popup = {
+			border = {
+				style = "rounded",
+			},
+		},
+	},
 	presets = {
-		bottom_search = true,
 		command_palette = true,
 		long_message_to_split = true,
 		inc_rename = false,

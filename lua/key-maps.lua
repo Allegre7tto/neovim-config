@@ -3,10 +3,6 @@ local map = vim.api.nvim_set_keymap
 
 vim.g.mapleader = " "
 
--- space+d 显示报错
-map('n', '<leader>d', '<cmd>lua vim.diagnostic.open_float(nil, { focusable = false })<CR>',
-	{ noremap = true, silent = true })
-
 -- 添加 option+上下移动当前行
 map('n', '<A-Up>', ':m .-2<CR>==', opts)
 map('n', '<A-Down>', ':m .+1<CR>==', opts)
