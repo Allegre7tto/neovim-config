@@ -8,7 +8,7 @@ A minimal Neovim configuration powered by the official built-in plugin manager [
 - **catppuccin** theme (frappe, transparent background)
 - **nvim-treesitter** syntax highlighting
 - **blink.cmp** completion (native Rust fuzzy matcher) + friendly-snippets
-- **nvim-lspconfig** + `vim.lsp.enable()` for language servers (lua_ls, clangd, ts_ls, rust_analyzer, tailwindcss, pyright)
+- **nvim-lspconfig** + `vim.lsp.enable()` for language servers (lua_ls, clangd, ts_ls, rust_analyzer, tailwindcss, ty)
 - **telescope.nvim** find files / live grep / recent files
 - **which-key** leader key menu (helix preset)
 - **noice.nvim** — cmdline/search popups, notifications
