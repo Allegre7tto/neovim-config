@@ -5,7 +5,7 @@ require("blink.cmp").setup({
 	},
 	completion = { documentation = { auto_show = true } },
 	sources = {
-		default = { 'lsp', 'snippets', 'path', 'buffer' },
+		default = { 'lsp', 'snippets' },
 	},
 	signature = {
 		enabled = true,
