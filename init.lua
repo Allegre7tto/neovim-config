@@ -68,5 +68,3 @@ require("plugins.noice")
 require("plugins.which-key")
 require("plugins.autopair")
 require("plugins.lsp")
-
-vim.cmd('colorscheme catppuccin')
