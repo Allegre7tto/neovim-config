@@ -31,7 +31,7 @@ require("conform").setup({
 	},
 	formatters = {
 		["clang-format"] = {
-			prepend_args = { "--style=Google" },
+			prepend_args = { "--style={BasedOnStyle: Google, IndentWidth: 4}" },
 		},
 	},
 })
