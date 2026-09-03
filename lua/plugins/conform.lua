@@ -12,14 +12,6 @@ require("conform").setup({
 			"clang-format",
 			format_on_save = true
 		},
-		javascript = {
-			"ts_ls",
-			format_on_save = true
-		},
-		typescript = {
-			"ts_ls",
-			format_on_save = true
-		},
 		rust = {
 			"rust_analyzer",
 			format_on_save = true
