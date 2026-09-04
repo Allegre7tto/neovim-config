@@ -1,6 +1,7 @@
 local opt = vim.opt
 opt.number = true
 opt.relativenumber = false
+opt.signcolumn = "number"
 opt.termguicolors = true
 opt.foldmethod = "indent"
 opt.foldlevel = 99
