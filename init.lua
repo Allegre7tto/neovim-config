@@ -59,6 +59,7 @@ vim.pack.add({
 }, { confirm = false })
 
 require("key-maps")
+require("netrw")
 require("plugins.theme")
 require("plugins.blink")
 require("plugins.conform")
