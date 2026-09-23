@@ -16,26 +16,6 @@ opt.guicursor       = {
 	"a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor",
 }
 
-local mason_bin = vim.fn.stdpath("data") .. "/mason/bin"
-if vim.fn.isdirectory(mason_bin) == 1 then
-	vim.env.PATH = mason_bin .. ":" .. vim.env.PATH
-end
-
-vim.api.nvim_create_autocmd("PackChanged", {
-	callback = function(ev)
-		if ev.data.spec.name == "blink.cmp" and (ev.data.kind == "install" or ev.data.kind == "update") then
-			vim.defer_fn(function()
-				local ok, err = pcall(function()
-					require("blink.cmp").build():pwait()
-				end)
-				if not ok then
-					vim.notify("blink.cmp native build failed: " .. tostring(err), vim.log.levels.ERROR)
-				end
-			end, 3000)
-		end
-	end,
-})
-
 vim.pack.add({
 	{ src = "https://github.com/catppuccin/nvim", name = "catppuccin" },
 	{ src = "https://github.com/nvim-treesitter/nvim-treesitter" },

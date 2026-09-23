@@ -1,14 +1,5 @@
-vim.lsp.config("ty", {
-	cmd = { vim.fn.expand("~/.local/bin/ty"), "server" },
-	filetypes = { "python" },
-	root_markers = { "pyproject.toml", "requirements.txt", "setup.py", ".git" },
-})
-
 vim.lsp.enable({
-	"lua_ls",
 	"clangd",
-	"rust_analyzer",
-	"ty",
 })
 
 vim.diagnostic.config({
