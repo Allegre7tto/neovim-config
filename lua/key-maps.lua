@@ -16,5 +16,5 @@ map('v', '<C-c>', '"+y', opts)
 map('v', '<C-x>', '"+d', opts)
 
 -- 添加 cmd+/ 快速注释
-map('n', '<C-/>', 'gcc', opts)
-map('v', '<C-/>', 'gc', opts)
+vim.keymap.set('n', '<C-/>', 'gcc', { remap = true, silent = true })
+vim.keymap.set('v', '<C-/>', 'gc', { remap = true, silent = true })
