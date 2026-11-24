@@ -23,6 +23,7 @@ require("conform").setup({
 	},
 	formatters = {
 		["clang-format"] = {
+			command = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-format",
 			prepend_args = { "--style={BasedOnStyle: Google, IndentWidth: 4}" },
 		},
 	},
