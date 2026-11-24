@@ -10,6 +10,15 @@ local function pick(fn, fallback)
 end
 
 require("snacks").setup({
+	notifier = {
+		enabled = true,
+	},
+	picker = {
+		enabled = true,
+		layout = {
+			preset = "telescope",
+		},
+	},
 	dashboard = {
 		sections = {
 			{ section = "header" },
@@ -97,7 +106,7 @@ require("snacks").setup({
 					icon = " ",
 					key = "<C-S-f>",
 					desc = "Find in Files",
-					action = pick("live_grep", function()
+					action = pick("grep", function()
 						local query = vim.fn.input("Grep for: ")
 						if query ~= "" then
 							local escaped = vim.fn.escape(query, [[\/]])

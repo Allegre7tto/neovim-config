@@ -2,12 +2,11 @@ require("catppuccin").setup({
 	flavour = "auto",
 	background = { dark = "frappe", light = "latte" },
 	transparent_background = true,
+	float = {
+		transparent = true,
+		solid = false,
+	},
 })
-
-local function floats()
-	vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
-	vim.api.nvim_set_hl(0, "FloatBorder", { bg = "none" })
-end
 
 vim.api.nvim_create_autocmd("OptionSet", {
 	pattern = "background",
@@ -15,7 +14,5 @@ vim.api.nvim_create_autocmd("OptionSet", {
 		vim.cmd.colorscheme "catppuccin-nvim"
 	end,
 })
-vim.api.nvim_create_autocmd("ColorScheme", { callback = floats })
 
 vim.cmd.colorscheme "catppuccin-nvim"
-floats()

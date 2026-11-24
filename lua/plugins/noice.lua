@@ -1,7 +1,3 @@
-require("notify").setup({
-	background_colour = "#313445",
-})
-
 require("noice").setup({
 	lsp = {
 		override = {
