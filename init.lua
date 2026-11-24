@@ -46,7 +46,6 @@ vim.pack.add({
 	{ src = "https://github.com/saghen/blink.lib" },
 	{ src = "https://github.com/rafamadriz/friendly-snippets" },
 	{ src = "https://github.com/stevearc/conform.nvim" },
-	{ src = "https://github.com/windwp/nvim-autopairs" },
 	{ src = "https://github.com/nvim-lualine/lualine.nvim" },
 	{ src = "https://github.com/folke/noice.nvim" },
 	{ src = "https://github.com/MunifTanjim/nui.nvim" },
@@ -55,7 +54,6 @@ vim.pack.add({
 	{ src = "https://github.com/nvim-mini/mini.nvim" },
 	{ src = "https://github.com/folke/snacks.nvim" },
 	{ src = "https://github.com/folke/which-key.nvim" },
-	{ src = "https://github.com/nvim-tree/nvim-web-devicons" },
 }, { confirm = false })
 
 require("key-maps")
@@ -68,5 +66,4 @@ require("plugins.dashboard")
 require("plugins.markdown")
 require("plugins.noice")
 require("plugins.which-key")
-require("plugins.autopair")
 require("plugins.lsp")

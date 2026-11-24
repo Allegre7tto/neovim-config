@@ -1,4 +1,10 @@
 require("mini.icons").setup()
+MiniIcons.mock_nvim_web_devicons()
+
+require("mini.pairs").setup()
+require("mini.ai").setup()
+require("mini.surround").setup()
+require("mini.diff").setup()
 require("mini.files").setup({
 	windows = {
 		preview = true,
