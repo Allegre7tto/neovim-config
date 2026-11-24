@@ -4,6 +4,10 @@ vim.lsp.config("ty", {
 	root_markers = { "pyproject.toml", "requirements.txt", "setup.py", ".git" },
 })
 
+vim.lsp.config("clangd", {
+	cmd = { "/usr/bin/clangd" },
+})
+
 vim.lsp.enable({
 	"lua_ls",
 	"clangd",
