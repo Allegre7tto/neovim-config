@@ -4,6 +4,7 @@ require("which-key").setup({
 
 require("which-key").add({
 	{ "<leader>d", function() Snacks.picker.diagnostics() end, desc = "Show diagnostics", icon = "󰒡" },
+	{ "<leader>g", function() MiniDiff.toggle_overlay() end, desc = "Toggle diff", icon = "" },
 	{ "<leader>f", function() Snacks.picker.files() end, desc = "Find files", icon = "" },
 	{ "<leader>F", function() Snacks.picker.grep() end, desc = "Live grep", icon = "" },
 	{ "<leader>r", function() Snacks.picker.recent() end, desc = "Recent files", icon = "" },
