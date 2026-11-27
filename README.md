@@ -6,7 +6,6 @@ A minimal Neovim configuration powered by the official built-in plugin manager [
 
 - **`vim.pack`** — official plugin manager, no third-party manager (no lazy.nvim)
 - **catppuccin** theme (frappe, transparent background)
-- **nvim-treesitter** syntax highlighting
 - **blink.cmp** completion (native Rust fuzzy matcher) + friendly-snippets
 - **nvim-lspconfig** + `vim.lsp.enable()` for language servers (lua_ls, clangd, ts_ls, rust_analyzer, tailwindcss, ty)
 - **telescope.nvim** find files / live grep / recent files

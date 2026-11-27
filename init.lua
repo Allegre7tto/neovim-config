@@ -1,11 +1,7 @@
 local opt = vim.opt
 opt.number = true
-opt.relativenumber = false
 opt.signcolumn = "number"
 opt.termguicolors = true
-opt.foldmethod = "indent"
-opt.foldlevel = 99
-opt.foldenable = false
 opt.fillchars = { eob = " " }
 
 opt.tabstop         = 4
@@ -15,11 +11,6 @@ opt.guicursor       = {
 	"i:ver25",
 	"a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor",
 }
-
-local mason_bin = vim.fn.stdpath("data") .. "/mason/bin"
-if vim.fn.isdirectory(mason_bin) == 1 then
-	vim.env.PATH = mason_bin .. ":" .. vim.env.PATH
-end
 
 vim.api.nvim_create_autocmd("PackChanged", {
 	callback = function(ev)
@@ -38,7 +29,6 @@ vim.api.nvim_create_autocmd("PackChanged", {
 
 vim.pack.add({
 	{ src = "https://github.com/catppuccin/nvim", name = "catppuccin" },
-	{ src = "https://github.com/nvim-treesitter/nvim-treesitter" },
 	{ src = "https://github.com/neovim/nvim-lspconfig" },
 	{ src = "https://github.com/saghen/blink.cmp" },
 	{ src = "https://github.com/saghen/blink.lib" },
